@@ -16,7 +16,7 @@ import os
 from decouple import config, Csv
 from dj_database_url import parse as dburl
 
-BASE_DIR = Path(file).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
